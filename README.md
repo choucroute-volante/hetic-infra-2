@@ -45,10 +45,11 @@ Déployez sur AWS un déploiement contenant deux replicas de conteneurs basés s
 - Pour accéder à votre app, demandez vous quel composant relie votre projet au reste d'internet, et par conséquent quel composant possède un record DNS (un nom lisible par un humain) 
 
 **RENDU**
-Des captures d'écran de votre infrastructure, et si possible de votre navigateur montrant l'URL de votre site accompagné du message de bievenue du controlleur nginx.
+- Des captures d'écran de votre infrastructur
+- Si possible de votre navigateur montrant l'URL de votre site accompagné du message de bievenue du controlleur nginx.
 
-**IMPORTANT**
-Lorsque vous avez terminé votre TP et collecté les screenshots montrant votre avancement, n'oubliez pas de supprimer toutes les ressources créées, **EN PARTICULIER LA OU LES NAT GATEWAYS**, qui sont facturées 0.05€/instance/h
+**IMPORTANT: **
+- Lorsque vous avez terminé votre TP et collecté les screenshots montrant votre avancement, n'oubliez pas de supprimer toutes les ressources créées, **EN PARTICULIER LA OU LES NAT GATEWAYS**, qui sont facturées 0.05€/instance/h
 
 #########################################################################################################################################################
 
