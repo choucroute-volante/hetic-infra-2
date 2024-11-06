@@ -45,7 +45,7 @@ Déployez sur AWS un déploiement contenant deux replicas de conteneurs basés s
 - Pour accéder à votre app, demandez vous quel composant relie votre projet au reste d'internet, et par conséquent quel composant possède un record DNS (un nom lisible par un humain) 
 
 **RENDU**
-- Des captures d'écran de votre infrastructur
+- Des captures d'écran de votre infrastructure
 - Si possible de votre navigateur montrant l'URL de votre site accompagné du message de bievenue du controlleur nginx.
 
 **/!\ IMPORTANT**
