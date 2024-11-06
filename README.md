@@ -30,34 +30,29 @@ Ce TP a pour but de vous familiariser avec les bases de la conception d'infrastr
 
 ### Partie 3 : Déploiement sur AWS avec Fargate
 
-#### Préparation de l'Environnement AWS :
-Création de l’environnement et d’un VPC pour votre projet.
+Mise en place du plan d'infra réalisé hier.
+Vous devez déployer, grâce à des services ECS provisionnés par Fargate, une app web simple. Pour simplifier le processus, nous n'uploaderons pas d'image Docker mais travaillerons avec celle de l'Ingress Controller NGINX (image = nginx:latest)
+Déployez sur AWS un déploiement contenant deux replicas de conteneurs basés sur cette image.
 
-#### Création d'un Cluster ECS :
-- Utiliser Amazon ECS ou Fargate pour créer un cluster.
-- Définir une Task Definition avec les paramètres suivants :
-    - Image Docker (téléchargée sur Amazon ECR ou Docker Hub).
-    - Nombre de conteneurs à exécuter et allocation des ressources (CPU, mémoire).
-    - Configuration des variables d'environnement nécessaires.
+**CONTRAINTES**
+- Déployez votre app sur deux AZ
+- Vos machines faisant tourner les conteneurs ne doivent pas être directement accessibles depuis Internet
 
-#### Déploiement de l'Application :
-- Déployer la Task dans le cluster ECS.
-- Configurer un service ECS pour gérer la disponibilité de l'application (scaling, détection de panne).
+**INDICES**
+- N'oubliez pas de créer des NAT Gateways
+- Vérifiez dans quels subnets votre équilibreur de charges a été déployé
+- Vérifiez que votre pare-feu est bien configuré pour accepter le trafic entrant
+- Pour accéder à votre app, demandez vous quel composant relie votre projet au reste d'internet, et par conséquent quel composant possède un record DNS (un nom lisible par un humain) 
 
-#### Configuration du Load Balancer (ALB) :
-- Créer une Application Load Balancer (ALB) et configurer les règles d'écoute.
-- Associer le service ECS à l'ALB pour gérer le trafic vers les conteneurs
+**RENDU**
+Des captures d'écran de votre infrastructure, et si possible de votre navigateur montrant l'URL de votre site accompagné du message de bievenue du controlleur nginx.
 
+**IMPORTANT**
+Lorsque vous avez terminé votre TP et collecté les screenshots montrant votre avancement, n'oubliez pas de supprimer toutes les ressources créées, **EN PARTICULIER LA OU LES NAT GATEWAYS**, qui sont facturées 0.05€/instance/h
 
-
-### Partie 4 : Mise en Place de la Sécurité et des Groupes de Droits
-
-#### Création des Security Groups :
-Configurer un security group pour le service ECS, limitant l'accès aux seuls ports nécessaires (par exemple, 80 pour HTTP ou 443 pour HTTPS).
-
-
+#########################################################################################################################################################
 
 ## Livrables :
 Le Dockerfile et tout autre fichier de configuration nécessaire.
-Les captures d'écran ou les liens prouvant le bon fonctionnement de l'application déployée sur AWS.
-Un document décrivant les différentes étapes suivies, les défis rencontrés et les solutions apportées.
+Les captures d'écran prouvant le bon fonctionnement de l'application déployée sur AWS.
+Votre plan d'infra, comprenant schémas et motivations techniques (FOAD)
