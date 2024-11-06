@@ -48,7 +48,7 @@ Déployez sur AWS un déploiement contenant deux replicas de conteneurs basés s
 - Des captures d'écran de votre infrastructur
 - Si possible de votre navigateur montrant l'URL de votre site accompagné du message de bievenue du controlleur nginx.
 
-**IMPORTANT**
+**/!\ IMPORTANT**
 - Lorsque vous avez terminé votre TP et collecté les screenshots montrant votre avancement, n'oubliez pas de supprimer toutes les ressources créées, **EN PARTICULIER LA OU LES NAT GATEWAYS**, qui sont facturées 0.05€/instance/h
 
 #########################################################################################################################################################
