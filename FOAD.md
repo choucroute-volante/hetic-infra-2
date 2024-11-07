@@ -30,3 +30,9 @@ Cette tâche peut se décomposer en trois parties
 Pour insérer une image dans un fichier markdown
 https://stackoverflow.com/questions/41604263/how-do-i-display-local-image-in-markdown
 https://marinegeo.github.io/2018-08-10-adding-images-markdown/
+
+Pour commit votre rendu:
+git add fichier1 fichier2 ... fichiern
+**n'oubliez pas de commit vos images** pour qu'elles s'affichent dans le ficher en markdown
+git commit -m "message de commit"
+git push
